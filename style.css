@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #2887ff;
+    --primary-dark: #2476da;
+    --dark-text: #0a0a0a;
+    --light-text: #737373;
+    --lighter-text: #f3f4f6;
+    --white: #ffffff;
+    --max-width: 1200px;
+}
