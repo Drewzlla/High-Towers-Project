@@ -1,16 +1,100 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+/* ===============================
+   Google Font Import
+================================= */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700;800&display=swap");
+
+/* ===============================
+   CSS Variables
+================================= */
+:root {
+  --primary-color: #2887ff;
+  --primary-dark: #2476da;
+  --dark-text: #0a0a0a;
+  --light-text: #737373;
+  --lighter-text: #f3f4f6;
+  --white: #ffffff;
+  --max-width: 1200px;
 }
 
-:root{
-    --primary-color: #2887ff;
-    --primary-dark: #2476da;
-    --dark-text: #0a0a0a;
-    --light-text: #737373;
-    --lighter-text: #f3f4f6;
-    --white: #ffffff;
-    --max-width: 1200px;
+/* ===============================
+   Reset & Base Styles
+================================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  color: var(--dark-text);
+  background-color: var(--white);
+}
+
+img {
+  display: flex;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+ul {
+  list-style: none;
+}
+
+@media (width > 768px){
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 2rem 1rem;
+}
+nav .nav-head{
+  display: flex;
+  flex: 1;
+}
+nav .logo{
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--primary-color);
+}
+.nav-menu-btn{
+  display: none;
+}
+nav ul{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+nav ul li a{
+  color: var(--primary-color);
+  font-weight: 600;
+  display: inline-block;
+  white-space: nowrap;
+}
+nav ul li:last-child{
+  display: none;
+}
+nav .nav-btn{
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+}
+nav div button.btn{
+  padding: 0.75rem 2rem;
+  border-radius: 80px;
+  border: 1px solid var(--primary-color);
+  background-color: transparent;
+  color: var(--primary-color);
+  cursor: pointer;
+  font-weight: 600;
+}
 }

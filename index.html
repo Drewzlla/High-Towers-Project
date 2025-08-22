@@ -12,16 +12,18 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css">
     <title>High-Towers-Andrew</title>
   </head>
   <body>
     <nav>
-      <div class="logo">
-        <div>
-          <a href="#">High Towers</a>
+      <div class="nav-head">
+        <div class="nav-logo">
+          <a href="#" class="logo">High Towers</a>
         </div>
-        <div></div>
+        <div class="nav-menu-btn" id="menu-btn">
+                <i class="ri-menu-line"></i>
+            </div>
       </div>
 
       <ul>
@@ -44,8 +46,8 @@
           <a href="#">BOOK TRIP</a>
         </li>
       </ul>
-      <div>
-        <button class="nav-btn">BOOK TRIP</button>
+      <div class="nav-btn">
+        <button class="btn">BOOK TRIP</button>
       </div>
     </nav>
     <header id="hero">
@@ -53,8 +55,8 @@
         <div class="hero-content">
           <p>ELEVATE YOUR TRAVEL JOURNEY</p>
           <h1>
-            Experience The Magic Of <span class="1">Flight</span
-            ><span class="2">!</span>
+            Experience The Magic Of <span class="hero-1">Flight</span
+            ><span class="hero-2">!</span>
           </h1>
           <div class="hero-btns">
             <button class="btn">Book A Trip Now</button>
@@ -198,16 +200,16 @@
         </div>
       </div>
     </section>
-    <section class="container baner-section">
-      <div class="baner-card">
+    <section class="container banner-section">
+      <div class="banner-card">
         <h4>10+</h4>
         <p>Years Experience</p>
       </div>
-      <div class="baner-card">
+      <div class="banner-card">
         <h4>12K</h4>
         <p>Happy Clients</p>
       </div>
-      <div class="baner-card">
+      <div class="banner-card">
         <h4>4.8</h4>
         <p>Overall Ratings</p>
       </div>
@@ -217,7 +219,7 @@
       <p class="sub-title">
         Experience Breathtaking Views and Unique Perspective
       </p>
-      <div class="dicover-grid">
+      <div class="discover-grid">
         <div class="discover-card">
           <span><i class="ri-camera-lens-line"></i></span>
           <h4>Aerial Cityscapes</h4>
@@ -251,7 +253,7 @@
         eyes of our valued clients.
       </p>
       <div class="swiper">
-        <div class="swiper-wraper">
+        <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="client-card">
               <div class="client-content">
@@ -270,7 +272,7 @@
                   to elevate their travel experience!
                 </p>
               </div>
-              <div class="client__details">
+              <div class="client-details">
                 <img src="media/client-1.jpg" alt="client" />
                 <div>
                   <h4>John Adams</h4>
@@ -280,9 +282,9 @@
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="client__card">
-              <div class="client__content">
-                <div class="client__rating">
+            <div class="client-card">
+              <div class="client-content">
+                <div class="client-rating">
                   <span><i class="ri-star-fill"></i></span>
                   <span><i class="ri-star-fill"></i></span>
                   <span><i class="ri-star-fill"></i></span>
@@ -297,7 +299,7 @@
                   adventure with them!
                 </p>
               </div>
-              <div class="client__details">
+              <div class="client-details">
                 <img src="media/client-2.jpg" alt="client" />
                 <div>
                   <h4>Emily Thompson</h4>
@@ -307,9 +309,9 @@
             </div>
           </div>
           <div class="swiper-slide">
-                    <div class="client__card">
-                      <div class="client__content">
-                        <div class="client__rating">
+                    <div class="client-card">
+                      <div class="client-content">
+                        <div class="client-rating">
                           <span><i class="ri-star-fill"></i></span>
                           <span><i class="ri-star-fill"></i></span>
                           <span><i class="ri-star-fill"></i></span>
@@ -324,7 +326,7 @@
                           historians and cultural enthusiasts.
                         </p>
                       </div>
-                      <div class="client__details">
+                      <div class="client-details">
                         <img src="media/client-3.jpg" alt="client" />
                         <div>
                           <h4>Sarah Lee</h4>
@@ -334,9 +336,9 @@
                     </div>
                   </div>
           <div class="swiper-slide">
-            <div class="client__card">
-              <div class="client__content">
-                <div class="client__rating">
+            <div class="client-card">
+              <div class="client-content">
+                <div class="client-rating">
                   <span><i class="ri-star-fill"></i></span>
                   <span><i class="ri-star-fill"></i></span>
                   <span><i class="ri-star-fill"></i></span>
@@ -351,7 +353,7 @@
                   them again on future travels.
                 </p>
               </div>
-              <div class="client__details">
+              <div class="client-details">
                 <img src="media/client-4.jpg" alt="client" />
                 <div>
                   <h4>David Patel</h4>
@@ -364,9 +366,9 @@
       </div>
     </section>
     <footer>
-      <div class="section__container footer__container">
-                  <div class="footer__col">
-                    <div class="footer__logo">
+      <div class="container footer-section">
+                  <div class="footer-col">
+                    <div class="footer-logo">
                       <a href="#" class="logo">HighTowers</a>
                     </div>
                     <p>
@@ -374,7 +376,7 @@
                       travel platform. Your journey begins here, where seamless planning
                       meets unforgettable experiences.
                     </p>
-                    <ul class="footer__socials">
+                    <ul class="footer-socials">
                       <li>
                         <a href="#"><i class="ri-facebook-fill"></i></a>
                       </li>
@@ -386,18 +388,18 @@
                       </li>
                     </ul>
                   </div>
-                  <div class="footer__col">
+                  <div class="footer-col">
                     <h4>Quick Links</h4>
-                    <ul class="footer__links">
+                    <ul class="footer-links">
                       <li><a href="#">Home</a></li>
                       <li><a href="#">Flights</a></li>
                       <li><a href="#">Hotels</a></li>
                       <li><a href="#">Cruise</a></li>
                     </ul>
                   </div>
-                  <div class="footer__col">
+                  <div class="footer-col">
                     <h4>Contact Us</h4>
-                    <ul class="footer__links">
+                    <ul class="footer-links">
                       <li>
                         <a href="#">
                           <span><i class="ri-phone-fill"></i></span> +91 9876543210
@@ -415,7 +417,7 @@
                       </li>
                     </ul>
                   </div>
-                  <div class="footer__col">
+                  <div class="footer-col">
                     <h4>Subscribe</h4>
                     <form action="/">
                       <input type="text" placeholder="Enter your email" />
@@ -423,8 +425,8 @@
                     </form>
                   </div>
                 </div>
-                <div class="footer__bar">
-                  Copyright © 2025 Emmanuel Nmaju. All rights reserved.
+                <div class="footer-bottom">
+                  Copyright © 2025 Andrew Ukwuoma. All rights reserved.
                 </div>
     </footer>
   </body>
