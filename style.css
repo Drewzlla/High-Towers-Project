@@ -48,14 +48,34 @@ a {
 ul {
   list-style: none;
 }
-
+.btn{
+      padding: 0.75rem 1.5rem;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    white-space: nowrap;
+    color: var(--white);
+    background-color: var(--primary-color);
+    border-radius: 5rem;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.container{
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 5rem 3rem;
+}
 @media (width > 768px){
 nav{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-inline: auto;
   gap: 2rem;
   padding: 2rem 1rem;
+  width: 100%;
+  max-width: var(--max-width);
+  position: static;
 }
 nav .nav-head{
   display: flex;
@@ -96,5 +116,89 @@ nav div button.btn{
   color: var(--primary-color);
   cursor: pointer;
   font-weight: 600;
+}
+header{
+margin-top: 0;
+    padding-inline: 1rem;
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+}
+header::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: calc(100% - 2rem);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url("media/header-bg.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 3rem;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.5); /* Overlay color */
+  }
+.hero-container{
+  display: grid;
+  grid-template-columns: minmax(0, 1fr)
+          repeat(5, minmax(0, calc(var(--max-width) / 5)))
+          minmax(0, 1fr);
+}
+.hero-content{
+  grid-column: 2/4;
+  padding-block: 8rem;
+  padding: 4rem 1rem;
+}
+.hero-content p {
+    margin-bottom: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--dark-text);
+    text-align: left;
+  }
+  
+  .hero-content h1 {
+    margin-bottom: 2rem;
+    font-size: 4.5rem;
+    font-weight: 600;
+    color: var(--dark-text);
+    line-height: 5.5rem;
+    text-align: left;
+  }
+  .hero-content h1 .hero-1{
+    color: var(--white);
+  }
+.hero-content h1 .hero-2{
+  color: var(--primary-color);
+}
+.hero-btns{
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+.hero-btns .btn{
+  padding: 1rem 2rem;
+}
+.hero-btns a{
+    padding: 9px 13px;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    background-color: var(--white);
+    border-radius: 100%;
+}
+.hero-image{
+  grid-column: 4/8;
+  position: relative;
+  isolation: isolate;
+  height: 100%;
+}
+.hero-image img{
+  position: absolute;
+  top: 2rem;
+  left: 0;
+  height: 100%;
+  width: unset;
 }
 }
