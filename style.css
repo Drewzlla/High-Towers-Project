@@ -68,7 +68,7 @@ ul {
 .title{
   margin-top: 4.5rem;
 }
-@media (width > 768px){
+
 nav{
   display: flex;
   align-items: center;
@@ -255,7 +255,7 @@ header::before {
   margin-bottom: 2rem;
 }
 .journey-front{
-    background-color: var(--extra-light);
+    background-color: var(--lighter-text);
     border-top-right-radius: 1rem;
     border-top-left-radius: 1rem;
     padding: 1.2rem;
@@ -300,4 +300,93 @@ header::before {
 .journey-card:hover .pop-up{
   top: 0px;
 }
+.showcase-section{
+  display: grid;
+  gap: 1rem;
+  overflow: hidden;
+  grid-template-columns: repeat(3, 1fr)
+}
+.showcase-img img{
+    max-width: 400px;
+    box-shadow: rgba(0, 0, 0, 0.2) 5px 5px 20px;
+    margin-inline: auto;
+}
+.showcase-content{
+  grid-column: 2/4;
+}
+.showcase-content h4{
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--dark-text);
+}
+.showcase-content p{
+      margin-bottom: 1rem;
+    color: var(--light-text);
+    font-size: 9px;
+    line-height: 1.1rem;
+}
+.showcase-content .btn{
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1.75rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    background-image: url("media/header-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 1rem;
+    background-position: center center;
+    border-radius: 5px;
+}
+.banner-section{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.banner-card{
+    padding: 2rem 1rem;
+    text-align: center;
+    background-color: var(--lighter-text);
+    border-radius: 2rem;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+}
+.banner-card h4{
+  color: var(--primary-color);
+  font-size: 5rem;
+  font-weight: 500;
+}
+.banner-card p{
+  color: var(--light-text);
+}
+.discover-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 4rem;
+}
+.discover-card{
+    padding: 2rem 1rem;
+    text-align: center;
+    transition: 0.3s;
+    border-radius: 1rem;
+    border: 1px dotted var(--primary-color);
+}
+.discover-card span{
+    display: inline-block;
+    margin-bottom: 1rem;
+    padding: 10px 15px;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    background-color: rgba(40, 135, 255, 0.1);
+    border-radius: 100%;
+}
+.discover-card h4{
+    max-width: 150px;
+    margin-inline: auto;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--dark-text);
 }
