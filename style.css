@@ -102,6 +102,11 @@ nav ul li a{
   font-weight: 600;
   display: inline-block;
   white-space: nowrap;
+  transition: all 0.3s ease;
+}
+nav ul li a:hover{
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px transparent(0,0,0,0.2);
 }
 nav ul li:last-child{
   display: none;

@@ -26,3 +26,28 @@ navItems.forEach((item) => {
         menuBtnIcon.setAttribute("class", "ri-menu-line");
     });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const animatedElements = document.querySelectorAll(
+    ".fade-in, .slide-up, .slide-left, .slide-right"
+  );
+
+  const appearOptions = {
+    threshold: 0.2, // trigger when 20% is visible
+    rootMargin: "0px 0px -50px 0px"
+  };
+
+  const appearOnScroll = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+        observer.unobserve(entry.target); // only reveal once
+      }
+    });
+  }, appearOptions);
+
+  animatedElements.forEach(el => {
+    appearOnScroll.observe(el);
+  });
+});
+

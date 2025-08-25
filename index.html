@@ -13,6 +13,7 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animation.css">
     <title>High-Towers-Andrew</title>
   </head>
   <body>
@@ -52,31 +53,31 @@
     </nav>
     <header id="hero">
       <div class="hero-container">
-        <div class="hero-content">
+        <div class="hero-content fade-in">
           <p>ELEVATE YOUR TRAVEL JOURNEY</p>
-          <h1>
+          <h1 class="slide-up">
             Experience The Magic Of <span class="hero-1">Flight</span
             ><span class="hero-2">!</span>
           </h1>
-          <div class="hero-btns">
+          <div class="hero-btns slide-up">
             <button class="btn">Book A Trip Now</button>
             <a href="#">
               <i class="ri-play-circle-fill"></i>
             </a>
           </div>
         </div>
-        <div class="hero-image">
+        <div class="hero-image slide-right">
           <img src="media/header.png" alt="airplane" />
         </div>
       </div>
     </header>
     <section class="container destination-section" id="about">
-      <h2 class="title">Popular Destinations</h2>
+      <h2 class="title fade-in ">Popular Destinations</h2>
       <p class="sub-title">
         Discover the Most Loved Destinations Around the Globe
       </p>
       <div class="destination-grid">
-        <div class="destination-card">
+        <div class="destination-card slide-up">
           <img src="media/destination-1.jpg" alt="destination" />
           <div class="card-details">
             <div>
@@ -89,7 +90,7 @@
             </div>
           </div>
         </div>
-        <div class="destination-card">
+        <div class="destination-card slide-up">
           <img src="media/destination-2.jpg" alt="destination" />
           <div class="card-details">
             <div>
@@ -102,7 +103,7 @@
             </div>
           </div>
         </div>
-        <div class="destination-card">
+        <div class="destination-card slide-up">
           <img src="media/destination-3.jpg" alt="destination" />
           <div class="card-details">
             <div>
@@ -118,10 +119,10 @@
       </div>
     </section>
     <section class="container journey-section" id="tour">
-      <h2 class="title">Journey To The Sky Made Simple</h2>
+      <h2 class="title fade-in">Journey To The Sky Made Simple</h2>
       <p class="sub-title">Effortless Planning for Your Next Adventure</p>
       <div class="journey-grid">
-        <div class="journey-card">
+        <div class="journey-card slide-up">
           <div class="journey-front">
             <span><i class="ri-bookmark-3-line"></i></span>
             <h4>Seamless Booking Experience</h4>
@@ -136,7 +137,7 @@
             </p>
           </div>
         </div>
-        <div class="journey-card">
+        <div class="journey-card slide-up">
           <div class="journey-front">
             <span><i class="ri-landscape-fill"></i></span>
             <h4>Tailored Itineraries</h4>
@@ -151,7 +152,7 @@
             </p>
           </div>
         </div>
-        <div class="journey-card">
+        <div class="journey-card slide-up">
           <div class="journey-front">
             <span><i class="ri-map-2-line"></i></span>
             <h4>Expert Local Insights</h4>
@@ -168,12 +169,12 @@
       </div>
     </section>
     <section class="container showcase-section" id="package">
-      <div class="showcase-img">
+      <div class="showcase-img slide-left">
         <img src="media/showcase.jpg" alt="showcase" />
       </div>
-      <div class="showcase-content">
-        <h4>UNLEASH WANDERLUST WITH HIGHTOWERS</h4>
-        <p>
+      <div class="showcase-content fade-in">
+        <h4 class="slide-up">UNLEASH WANDERLUST WITH HIGHTOWERS</h4>
+        <p class="slide-up">
           Embark on a journey like no other with Skywings, where your travel
           dreams come to life. Our mission is to inspire and facilitate your
           adventures, whether you seek the vibrant energy of bustling
@@ -184,7 +185,7 @@
           yourself in diverse cultures, and create unforgettable memories that
           will last a lifetime.
         </p>
-        <p>
+        <p class="slide-up">
           With Skywings as your ultimate travel companion, exploring the wonders
           of the world has never been easier. Our insider tips and local
           insights give you the tools to navigate new places with confidence and
@@ -193,7 +194,7 @@
           enriching.
         </p>
         <div class="showcase-btn">
-          <button class="btn">
+          <button class="btn slide-up">
             Book A Flight Now
             <span><i class="ri-arrow-right-line"></i></span>
           </button>
@@ -201,26 +202,26 @@
       </div>
     </section>
     <section class="container banner-section">
-      <div class="banner-card">
+      <div class="banner-card fade-in">
         <h4>10+</h4>
         <p>Years Experience</p>
       </div>
-      <div class="banner-card">
+      <div class="banner-card fade-in">
         <h4>12K</h4>
         <p>Happy Clients</p>
       </div>
-      <div class="banner-card">
+      <div class="banner-card fade-in">
         <h4>4.8</h4>
         <p>Overall Ratings</p>
       </div>
     </section>
     <section class="container discover-section">
-      <h2 class="title">Discover The World From Above</h2>
+      <h2 class="title fade-in">Discover The World From Above</h2>
       <p class="sub-title">
         Experience Breathtaking Views and Unique Perspective
       </p>
       <div class="discover-grid">
-        <div class="discover-card">
+        <div class="discover-card slide-up">
           <span><i class="ri-camera-lens-line"></i></span>
           <h4>Aerial Cityscapes</h4>
           <p>
@@ -228,7 +229,7 @@
             bird's-eye view, offering a unique perspective.
           </p>
         </div>
-        <div class="discover-card">
+        <div class="discover-card slide-up">
           <span><i class="ri-ship-line"></i></span>
           <h4>Coastal Wonders</h4>
           <p>
@@ -236,7 +237,7 @@
             coves and vibrant coral reefs.
           </p>
         </div>
-        <div class="discover-card">
+        <div class="discover-card slide-up">
           <span><i class="ri-landscape-line"></i></span>
           <h4>Historic Landmarks</h4>
           <p>
@@ -247,14 +248,14 @@
       </div>
     </section>
     <section class="container client-section" >
-      <h2 class="title">Loved By Over Thousand Travelers</h2>
+      <h2 class="title fade-in">Loved By Over Thousand Travelers</h2>
       <p class="sub-title">
         Discover the stories of wanderlust and cherished memories through the
         eyes of our valued clients.
       </p>
-      <div class="swiper">
+      <div class="swiper fade-in">
         <div class="swiper-wrapper">
-          <div class="swiper-slide">
+          <div class="swiper-slide slide-up">
             <div class="client-card">
               <div class="client-content">
                 <div class="client-rating">
@@ -281,7 +282,7 @@
               </div>
             </div>
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide slide-up">
             <div class="client-card">
               <div class="client-content">
                 <div class="client-rating">
@@ -308,7 +309,7 @@
               </div>
             </div>
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide slide-up">
                     <div class="client-card">
                       <div class="client-content">
                         <div class="client-rating">
@@ -335,7 +336,7 @@
                       </div>
                     </div>
                   </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide slide-up">
             <div class="client-card">
               <div class="client-content">
                 <div class="client-rating">
@@ -365,9 +366,9 @@
         </div>
       </div>
     </section>
-    <footer id="contact">
+    <footer id="contact" class="fade-in">
       <div class="container footer-section">
-                  <div class="footer-col">
+                  <div class="footer-col slide-up">
                     <div class="footer-logo">
                       <a href="#" class="logo">HighTowers</a>
                     </div>
@@ -388,7 +389,7 @@
                       </li>
                     </ul>
                   </div>
-                  <div class="footer-col">
+                  <div class="footer-col slide-up">
                     <h4>Quick Links</h4>
                     <ul class="footer-links">
                       <li><a href="#">Home</a></li>
@@ -397,7 +398,7 @@
                       <li><a href="#">Cruise</a></li>
                     </ul>
                   </div>
-                  <div class="footer-col">
+                  <div class="footer-col slide-up">
                     <h4>Contact Us</h4>
                     <ul class="footer-links">
                       <li>
@@ -417,7 +418,7 @@
                       </li>
                     </ul>
                   </div>
-                  <div class="footer-col">
+                  <div class="footer-col slide-up">
                     <h4>Subscribe</h4>
                     <form action="/">
                       <input type="text" placeholder="Enter your email" />
@@ -425,7 +426,7 @@
                     </form>
                   </div>
                 </div>
-                <div class="footer-bottom">
+                <div class="footer-bottom fade-in">
                   Copyright © 2025 Andrew Ukwuoma. All rights reserved.
                 </div>
     </footer>
